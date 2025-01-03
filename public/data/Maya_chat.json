@@ -1,0 +1,93 @@
+[
+    {
+      "label": "greeting",
+      "text": "Hi Maya! How are you holding up?",
+      "response": "Hello, Detective Arjun. I'm managing, thank you. Let's focus on the investigation."
+    },
+    {
+      "label": "greeting",
+      "text": "Hello Maya. How's everything?",
+      "response": "Hello, Detective Arjun. I'm ready to assist with the case."
+    },
+    {
+      "label": "support",
+      "text": "You're doing great, Maya.",
+      "response": "Thank you, Detective. Let's keep pushing forward with the investigation."
+    },
+    {
+      "label": "details",
+      "text": "Can you tell me more about the Lake View Colony?",
+      "response": "Lake View Colony is a quiet neighborhood, but lately, strange events have been occurring. It's worth investigating."
+    },
+    {
+      "label": "memories",
+      "text": "Do you recall any unusual activities in the past few days?",
+      "response": "Yes, Detective. I noticed unfamiliar faces around the colony, and the atmosphere felt tense."
+    },
+    {
+      "label": "police",
+      "text": "Has the local police been informed?",
+      "response": "Yes, Detective. ACP Aravind is aware of the situation and is coordinating with the local police."
+    },
+    {
+      "label": "enemies",
+      "text": "Did the victim have any known enemies?",
+      "response": "The victim was well-liked, but there are rumors of a conflict with someone in the neighborhood."
+    },
+    {
+      "label": "friends",
+      "text": "Have we checked with the victim's friends?",
+      "response": "Yes, Detective. Her friends mentioned she had been stressed recently but didn't elaborate further."
+    },
+    {
+      "label": "suspicion",
+      "text": "Do you suspect anyone in the colony?",
+      "response": "There are a few people who seemed nervous when I spoke with them. It might be worth looking into."
+    },
+    {
+      "label": "location",
+      "text": "Where should we focus our investigation?",
+      "response": "The area around the lake and the victim's house seem like key locations to investigate further."
+    },
+    {
+      "label": "evidence",
+      "text": "Have we found any crucial evidence?",
+      "response": "Not yet, but we're still combing through the area for any clues."
+    },
+    {
+      "label": "question",
+      "text": "What should be our next step?",
+      "response": "We should interview more residents of Lake View Colony and gather any security footage available."
+    },
+    {
+      "label": "question",
+      "text": "Any updates from the police?",
+      "response": "The police are still reviewing the evidence, and we'll be updated as soon as they find anything substantial."
+    },
+    {
+      "label": "unwanted",
+      "text": "Is there anything else you know?",
+      "response": "I don't have any additional information right now, but I'll keep you updated."
+    },
+    {
+      "label": "unwanted",
+      "text": "You’re not helping much, are you?",
+      "response": "I'm doing my best, Detective. Let's stay focused on solving this case."
+    },
+    {
+      "label": "evidence_update",
+      "text": "I found meat and drainage water, a common knife, and other people’s blood in everyone's report.",
+      "response": "That's an important observation, Detective Arjun. An unidentified body has been reported near the beach. Her autopsy and police report should be available in the lab and police records sections."
+    },
+    {
+      "label": "next_steps",
+      "text": "What should we do next?",
+      "response": "We should cross-reference the evidence with any recent missing person reports in the area."
+    },
+    {
+      "label": "case_update",
+      "text": "Update me on the case status.",
+      "response": "The investigation is ongoing, and we're still gathering evidence. I'll let you know as soon as we have a breakthrough."
+    }
+  ]
+  

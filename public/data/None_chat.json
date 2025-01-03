@@ -1,0 +1,117 @@
+[
+  {
+      "label": "greeting",
+      "text": "Hi Kajal! How are you doing today?",
+      "response": "Hello, Detective Arjun. I'm here to assist with the case."
+  },
+  {
+      "label": "greeting",
+      "text": "Hello Kajal. How's your day?",
+      "response": "Hello, Detective Arjun. I'm here to assist with the case."
+  },
+  {
+      "label": "compliment",
+      "text": "You're doing a great job, Kajal.",
+      "response": "Thank you, Detective. Let's keep up the good work and focus on the investigation."
+  },
+  {
+      "label": "details",
+      "text": "Tell me more about Dinesh's family.",
+      "response": "Dinesh is very close to his mother, Priya. His father has been absent for a while."
+  },
+  {
+      "label": "location",
+      "text": "Tell me more about Nungambakkam.",
+      "response": "Nungambakkam is a bustling area with many shops and restaurants. It might be useful to investigate further there."
+  },
+  {
+      "label": "information",
+      "text": "Do you have any information on Priya's daily routine?",
+      "response": "Yes, Priya often visits the local market in the mornings for groceries."
+  },
+  {
+      "label": "coordination",
+      "text": "Have we contacted the police?",
+      "response": "Yes, ACP Aravind is coordinating with us and has been following up on leads."
+  },
+  {
+      "label": "details",
+      "text": "Did Priya have any enemies?",
+      "response": "Priya is generally well-liked, and there don't seem to be any known enemies with a motive to harm her."
+  },
+  {
+      "label": "status",
+      "text": "Have we checked with her friends?",
+      "response": "Yes, we’ve spoken to her friends, but none have seen her recently or have useful information."
+  },
+  {
+      "label": "information",
+      "text": "Did she receive any strange calls?",
+      "response": "There have been no reports of unusual calls or messages."
+  },
+  {
+      "label": "details",
+      "text": "Is there anything specific you remember about the day Priya went missing?",
+      "response": "She was wearing a blue saree and her favorite locket. She left to buy groceries and did not return."
+  },
+  {
+      "label": "advice",
+      "text": "What should I focus on next?",
+      "response": "Review the available reports and continue investigating potential leads to gather more clues about Priya's disappearance."
+  },
+  {
+      "label": "assistance",
+      "text": "What can I do to assist you?",
+      "response": "Keep reviewing the evidence and follow up on any new leads that arise. Every detail helps."
+  },
+  {
+      "label": "information",
+      "text": "Do you know what Aravind knows about the case?",
+      "response": "Aravind is aware of the key details of the case and is managing the investigation. He has the latest updates and reports."
+  },
+  {
+      "label": "information",
+      "text": "What does Dinesh know about the case?",
+      "response": "Dinesh knows that his mother, Priya, went missing while going to buy groceries. He has provided all the details he can about her last known activities."
+  },
+  {
+      "label": "unwanted",
+      "text": "Anything else?",
+      "response": "I don't have any additional information at the moment."
+  },
+  {
+      "label": "unwanted",
+      "text": "Does your father have an affair?",
+      "response": "I don’t have information on that topic."
+  },
+  {
+      "label": "unwanted",
+      "text": "You are an idiot.",
+      "response": "I’m here to assist you. Let’s stay focused on the case."
+  },
+  {
+      "label": "update",
+      "text": "I found meat and drainage water, a common knife, and other people’s blood in everyone's report.",
+      "response": "That's an important observation, Detective Arjun. An unidentified body has been reported near the beach. Her autopsy and police report should be available in the lab and police records sections. Also, Aravind may have additional insights about our investigation near Priya's house."
+  },
+  {
+      "label": "action",
+      "text": "Alright go behind this Shyamala and look for ways to open the manhole",
+      "response": "We'll update you on that."
+  },
+  {
+      "label": "action",
+      "text": "Get me the old case details of Bhanumathi and Jessica conflict.",
+      "response": "That's a good move, Arjun. Aravind and I are on our 'date' to the State Crime Records Bureau, RA Puram. Check out the record sections then and there."
+  },
+  {
+      "label": "confirmation",
+      "text": "Martin is the killer.",
+      "response": "Got it. I’ll alert the city police to start the search for Martin."
+  },
+  {
+      "label": "confirmation",
+      "text": "I am guessing that Martin is the culprit.",
+      "response": "Got it. I’ll alert the city police to start the search for Martin."
+  }
+]

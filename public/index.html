@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETECTIVE ARJUN</title>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' http://localhost:7000; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; img-src 'self' data: http://localhost:000/icons8-favicon-48.png;">
+    
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <audio id="background-music" loop>
+        <source src="BGM.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Include Kajal Assistant Bubble -->
+    <div id="assistant-icon" onclick="toggleAssistant()">👩‍💼</div>
+
+    <!-- Kajal Assistant Popup Container -->
+    <div id="assistant-popup" class="assistant-popup">
+        <div id="assistant-content">
+            <!-- Content for the Assistant Popup -->
+            <h1>Kajal</h1>
+            <div id="assistant-chat"></div>
+            <div class="input-container">
+                <input type="text" id="usinput" placeholder="Type your message here">
+                <div class="send-icon" id="submit-btn">➤</div>
+                <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETECTIVE ARJUN</title>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' http://localhost:7000; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; img-src 'self' data: http://localhost:000/icons8-favicon-48.png;">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <audio id="background-music" loop>
+        <source src="BGM.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Include Kajal Assistant Bubble -->
+    <div id="assistant-icon" onclick="toggleAssistant()">👩‍💼</div>
+
+    <!-- Kajal Assistant Popup Container -->
+    <div id="assistant-popup" class="assistant-popup">
+        <div id="assistant-content">
+            <!-- Content for the Assistant Popup -->
+            <h1>Kajal</h1>
+            <div id="assistant-chat"></div>
+            <div class="input-container">
+                <input type="text" id="usinput" placeholder="Type your message here">
+                <div class="send-icon" onclick="sendMessage('None')" id="submit-btn">➤</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Initial State Page -->
+    <div id="initial-state">
+        <h1>DETECTIVE ARJUN</h1>
+        <div id="options">
+            <button class="brown-button" onclick="showCases()">Start Game</button>
+            <button class="brown-button" onclick="showAbout()">About</button>
+        </div>
+        <div id="settings">
+            <button class="brown-button" onclick="showSettings()">Settings</button>
+        </div>
+    </div>
+
+    <!-- Case Selection Page -->
+    <div id="case-selection" style="display: none;">
+        <h1>DETECTIVE ARJUN</h1>
+        <div id="background-image"></div>
+        <div id="case-options" class="case-options"></div>
+        <button class="back-button" onclick="goBack()">Back</button>
+    </div>
+
+    <!-- Details Page -->
+    <div id="details-page" style="display: none;">
+        <h1>DETECTIVE ARJUN</h1>
+        <div id="background-image-details"></div>
+        <div id="case-details">
+            <h1 id="case-title"></h1>
+            <img id="case-image" src="" alt="Case Image">
+            <textarea id="case-text" readonly></textarea>
+            <button class="back-button" onclick="goBackFromDetails()">Back</button>
+            <button class="brown-button" onclick="startInvestigation()">Start Investigation</button>
+        </div>
+    </div>
+
+    <div id="loading-state" style="display: none;">
+        <div class="loader"></div>
+    </div>
+
+    <div id="settings-page" style="display: none;">
+        <div id="settings-container">
+            <h1>Settings</h1>
+            <div id="music-switch-label">Music</div>
+            <label class="switch">
+                <input type="checkbox" id="music-switch" checked onchange="toggleMusic()">
+                <span class="slider round"></span>
+            </label>
+            <div>
+                <label for="volume-range">Volume</label>
+                <input type="range" id="volume-range" min="0" max="100" value="100" onchange="adjustVolume()">
+            </div>
+            <button class="back-button" onclick="goBackFromSettings()">Back to Game</button>
+        </div>
+    </div>
+
+    <div id="about-page" style="display: none;">
+        <div id="case-details">
+            <img src="OIG.png" id="case-image" alt="Cover Photo">
+            <h1 id="case-title">About Us</h1>
+            <div id="case-text">
+                There is nothing much I have to say now, I will meet you after finishing the remaining of the project
+            </div>
+            <div id="case-buttons">
+                <button class="back-button" onclick="goBackFromAbout()">Back to Home</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Integrated Case1 Content -->
+    <div id="investigation-page-1" style="display: none;">
+        <div id="investigation-container">
+            <h1>CASE 1 - SERIAL KILLER</h1>
+            <p style="color: red; font-size: 24px; margin-bottom: 20px;">Whom would you like to investigate?</p>
+            <div id="investigation-buttons">
+                <button class="investigation-button" onclick="startChat('Aravind')">Aravind</button>
+                <button class="investigation-button" onclick="startChat('Dinesh')">Dinesh</button>
+                <button class="investigation-button" id="lingesan-button" style="display: none;" onclick="startChat('Lingesan')">Lingesan</button>
+                <button class="investigation-button" id="anu-button" style="display: none;" onclick="startChat('Anu')">Anu</button>
+                <button class="investigation-button" id="Martin-button" style="display: none;" onclick="startChat('Martin')">Martin</button>
+            </div>
+            <br> <!-- Add some gap between the buttons and the next section -->
+            <div id="resources-section">
+                <p style="color: red; font-size: 24px; font-weight: bold; margin-bottom: 10px;">Resources</p>
+                <button class="investigation-button" onclick="openLab()">Open Lab</button>
+                <button class="investigation-button" onclick="openPoliceRecords()">Open Police Records</button>
+            </div>
+            <!-- Add the following "Back" button -->
+            <button class="back-button" onclick="goBackOk()">Back</button>
+            <div id="commissioner-msg" style="display:none;">
+                <p>Msg from the Commissioner: Upload me your findings for this killing happening in the city immediately. Your document should be in txt, and in speech format.</p>
+                <div class="file-upload-container">
+                    <input type="file" id="file-upload" accept=".txt">
+                    <button id="document-submit" onclick="checkdoc()">Submit</button>
+                </div>
+            </div>
+            <div id="kajal-msg" style="display:block;">
+                <p>Note: Update your findings to Kajal so that she can update you what's her next finding.</p>
+            </div>
+            
+            <div id="backend-msg" style="display:none;">
+                <p>Congratulations! You have sucessfully found the Guilty! Upload your final case report for us to evaluate you. Your document should be in txt format, dividing it into Headings and subheadings.</p>
+                <div class="report-upload-container">
+                    <input type="file" id="report-upload" accept=".txt">
+                    <button id="report-submit" onclick="endOfCase()" style="display:none;">Submit</button>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- Integrated Case4 Content -->
+    <div id="investigation-page-2" style="display: none;">
+        <div id="investigation-container">
+            <h1>CASE 2 - THE MISSING GIRL</h1>
+            <p style="color: red; font-size: 24px; margin-bottom: 20px;">Whom would you like to investigate?</p>
+            <div id="investigation-buttons">
+                <button class="investigation-button" onclick="startChat('Anu')">Anu</button>
+                <button class="investigation-button" onclick="startChat('Annapoorni')">Annapoorni</button>
+                <button class="investigation-button" id="lingesan-button" style="display: none;" onclick="startChat('Lingesan')">Lingesan</button>
+                <button class="investigation-button" id="anu-button" style="display: none;" onclick="startChat('Anu')">Anu</button>
+                <button class="investigation-button" id="Martin-button" style="display: none;" onclick="startChat('Martin')">Martin</button>
+            </div>
+            <br> <!-- Add some gap between the buttons and the next section -->
+            <div id="resources-section">
+                <p style="color: red; font-size: 24px; font-weight: bold; margin-bottom: 10px;">Resources</p>
+                <button class="investigation-button" onclick="openLab()">Open Lab</button>
+                <button class="investigation-button" onclick="openPoliceRecords()">Open Police Records</button>
+            </div>
+            <!-- Add the following "Back" button -->
+            <button class="back-button" onclick="goBackOk()">Back</button>
+            <div id="commissioner-msg" style="display:none;">
+                <p>Msg from the Commissioner: Upload me your findings for this killing happening in the city immediately. Your document should be in txt, and in speech format.</p>
+                <div class="file-upload-container">
+                    <input type="file" id="file-upload" accept=".txt">
+                    <button id="document-submit" onclick="checkdoc()">Submit</button>
+                </div>
+            </div>
+            <div id="kajal-msg" style="display:block;">
+                <p>Note: Update your findings to Kajal so that she can update you what's her next finding.</p>
+            </div>
+            
+            <div id="backend-msg" style="display:none;">
+                <p>Congratulations! You have sucessfully found the Guilty! Upload your final case report for us to evaluate you. Your document should be in txt format, dividing it into Headings and subheadings.</p>
+                <div class="report-upload-container">
+                    <input type="file" id="report-upload" accept=".txt">
+                    <button id="report-submit" onclick="endOfCase()" style="display:none;">Submit</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <!-- Integrated Case3 Content -->
+    <div id="investigation-page-3" style="display: none;">
+        <div id="investigation-container">
+            <h1>CASE 3 - LONDON MURDERS</h1>
+            <p style="color: red; font-size: 24px; margin-bottom: 20px;">Whom would you like to investigate?</p>
+            <div id="investigation-buttons">
+                <button class="investigation-button" onclick="startChat('David')">David</button>
+                <button class="investigation-button" id="lingesan-button" style="display: none;" onclick="startChat('Lingesan')">Lingesan</button>
+                <button class="investigation-button" id="anu-button" style="display: none;" onclick="startChat('Anu')">Anu</button>
+                <button class="investigation-button" id="Martin-button" style="display: none;" onclick="startChat('Martin')">Martin</button>
+            </div>
+            <br> <!-- Add some gap between the buttons and the next section -->
+            <div id="resources-section">
+                <p style="color: red; font-size: 24px; font-weight: bold; margin-bottom: 10px;">Resources</p>
+                <button class="investigation-button" onclick="openLab()">Open Lab</button>
+                <button class="investigation-button" onclick="openPoliceRecords()">Open Police Records</button>
+            </div>
+            <!-- Add the following "Back" button -->
+            <button class="back-button" onclick="goBackOk()">Back</button>
+            <div id="commissioner-msg" style="display:none;">
+                <p>Msg from the Commissioner: Upload me your findings for this killing happening in the city immediately. Your document should be in txt, and in speech format.</p>
+                <div class="file-upload-container">
+                    <input type="file" id="file-upload" accept=".txt">
+                    <button id="document-submit" onclick="checkdoc()">Submit</button>
+                </div>
+            </div>
+            <div id="kajal-msg" style="display:block;">
+                <p>Note: Update your findings to Kajal so that she can update you what's her next finding.</p>
+            </div>
+            
+            <div id="backend-msg" style="display:none;">
+                <p>Congratulations! You have sucessfully found the Guilty! Upload your final case report for us to evaluate you. Your document should be in txt format, dividing it into Headings and subheadings.</p>
+                <div class="report-upload-container">
+                    <input type="file" id="report-upload" accept=".txt">
+                    <button id="report-submit" onclick="endOfCase()" style="display:none;">Submit</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    
+
+    <!-- Integrated Case4 Content -->
+    <div id="investigation-page-4" style="display: none;">
+        <div id="investigation-container">
+            <h1>CASE 4 - LAXMI MYSTERIOUS LAND</h1>
+            <p style="color: red; font-size: 24px; margin-bottom: 20px;">Whom would you like to investigate?</p>
+            <div id="investigation-buttons">
+                <button class="investigation-button" onclick="startChat('Maya')">Maya</button>
+                <button class="investigation-button" id="lingesan-button" style="display: none;" onclick="startChat('Lingesan')">Lingesan</button>
+                <button class="investigation-button" id="anu-button" style="display: none;" onclick="startChat('Anu')">Anu</button>
+                <button class="investigation-button" id="Martin-button" style="display: none;" onclick="startChat('Martin')">Martin</button>
+            </div>
+            <br> <!-- Add some gap between the buttons and the next section -->
+            <div id="resources-section">
+                <p style="color: red; font-size: 24px; font-weight: bold; margin-bottom: 10px;">Resources</p>
+                <button class="investigation-button" onclick="openLab()">Open Lab</button>
+                <button class="investigation-button" onclick="openPoliceRecords()">Open Police Records</button>
+            </div>
+            <!-- Add the following "Back" button -->
+            <button class="back-button" onclick="goBackOk()">Back</button>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!-- Integrated Case5 Content -->
+    <div id="investigation-page-5" style="display: none;">
+        <div id="investigation-container">
+            <h1>CASE 5 - THE ODISHA TRAGEDY</h1>
+            <p style="color: red; font-size: 24px; margin-bottom: 20px;">Whom would you like to investigate?</p>
+            <div id="investigation-buttons">
+                <button class="investigation-button" onclick="startChat('Nisha')">Nisha</button>
+                <button class="investigation-button" id="lingesan-button" style="display: none;" onclick="startChat('Lingesan')">Lingesan</button>
+                <button class="investigation-button" id="anu-button" style="display: none;" onclick="startChat('Anu')">Anu</button>
+                <button class="investigation-button" id="Martin-button" style="display: none;" onclick="startChat('Martin')">Martin</button>
+            </div>
+            <br> <!-- Add some gap between the buttons and the next section -->
+            <div id="resources-section">
+                <p style="color: red; font-size: 24px; font-weight: bold; margin-bottom: 10px;">Resources</p>
+                <button class="investigation-button" onclick="openLab()">Open Lab</button>
+                <button class="investigation-button" onclick="openPoliceRecords()">Open Police Records</button>
+            </div>
+            <!-- Add the following "Back" button -->
+            <button class="back-button" onclick="goBackOk()">Back</button>
+            <div id="commissioner-msg" style="display:none;">
+                <p>Msg from the Commissioner: Upload me your findings for this killing happening in the city immediately. Your document should be in txt, and in speech format.</p>
+                <div class="file-upload-container">
+                    <input type="file" id="file-upload" accept=".txt">
+                    <button id="document-submit" onclick="checkdoc()">Submit</button>
+                </div>
+            </div>
+            <div id="kajal-msg" style="display:block;">
+                <p>Note: Update your findings to Kajal so that she can update you what's her next finding.</p>
+            </div>
+            
+            <div id="backend-msg" style="display:none;">
+                <p>Congratulations! You have sucessfully found the Guilty! Upload your final case report for us to evaluate you. Your document should be in txt format, dividing it into Headings and subheadings.</p>
+                <div class="report-upload-container">
+                    <input type="file" id="report-upload" accept=".txt">
+                    <button id="report-submit" onclick="endOfCase()" style="display:none;">Submit</button>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+    <!-- Congratulations-->
+    <div id="Congratulation-page" style="display: none;">
+        <div id="Congratulation-container">
+            <h1>CASE 1 - SERIAL KILLER</h1>
+            <h3>Congratulations! You've cracked this left-right and centre!</h3>
+            <p style="color: red; font-size: 24px; margin-bottom: 20px;">Your Score</p>
+            <div class="star yellow"></div>
+            <div class="star yellow"></div>
+            <div class="star yellow"></div>
+            <br>
+            <button class="back-button" onclick="goBackOk()">Back</button>
+        </div>
+    </div>    
+
+
+
+
+
+    <!-- Try again -->
+    <div id="Try-page" style="display: none;">
+        <div id="Try-container">
+            <h1>CASE 1 - SERIAL KILLER</h1>
+            <h3>Hey! You seem to be missing something</h3>
+            <p style="color: red; font-size: 24px; margin-bottom: 20px;">Your score</p>
+            <div class="star yellow"></div>
+            <div class="star yellow"></div>
+            <div class="star black"></div>
+            <br>
+            <button id="Try-back-button" onclick="goBackFromTry()">Back</button>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Lab Section -->
+    <div id="lab-section" style="display: none;">
+        <div id="lab-page">
+            <div id="lab-container">
+                <p>Forensic Lab</p>
+                <p>Download Autopsy Report <a href="data/Forensic1.docx" download="Forensic1.docx">Report 1</a></p>
+                <p>Download Autopsy Report <a href="data/Forensic2.docx" download="Forensic2.docx">Report 2</a></p>
+                <p>Download Autopsy Report <a href="data/Forensic3.docx" download="Forensic3.docx">Report 3</a></p>
+                <p id="lab-report-4" style="display: none;">Download Autopsy Report <a href="data/Forensic4.docx" download="Forensic4.docx">Report 4</a></p>
+                <p id="lab-report-5" style="display: none;">Download Autopsy Report <a href="data/Forensic5.docx" download="Forensic5.docx" onclick="handleDownload('lab-report-5')">Report 5</a></p>
+                <p id="lab-report-6" style="display: none;">Download Autopsy Report <a href="data/Forensic6.docx" download="Forensic6.docx" onclick="handleDownload('lab-report-6')">Report 6</a></p>
+                <p id="lab-report-7" style="display: none;">Download Autopsy Report <a href="data/Forensic7.docx" download="Forensic7.docx" onclick="handleDownload('lab-report-7')">Report 7</a></p>
+                <p id="blast-postmortem-files" style="display: none;">Download Autopsy Report <a href="data/Blast-forensic.docx" download="blast-forensic.docx" onclick="handleDownload('blast-postmortem-files')">Aisha Autopsy</a></p>
+                
+            </div>
+            <!-- Add this "Back" button for going back to the investigation page -->
+            <button class="lab-back-button" onclick="goBackFromLab()">Back</button>
+        </div>
+    </div>
+
+    <!-- Police Records Section -->
+    <div id="police-records-section" style="display: none;">
+        <div id="police-records-page">
+            <div id="police-records-container">
+                <p>Police Records</p>
+                <p>Download Police Document: <a href="data/Police1.docx" download="Police1.docx">Report 1</a></p>
+                <p>Download Police Document: <a href="data/Police2.docx" download="Police2.docx">Report 2</a></p>
+                <p>Download Police Document: <a href="data/Police3.docx" download="Police3.docx">Report 3</a></p>
+                <p id="police-report-4" style="display: none;">Download Police Document: <a href="data/Police4.docx" download="Police4.docx">Report 4</a></p>
+                <p id="police-report-5" style="display: none;">Download Police Document: <a href="data/Police5.docx" download="Police5.docx" onclick="handleDownload('police-report-5')">Report 5</a></p>
+                <p id="police-report-6" style="display: none;">Download Police Document: <a href="data/Police6.docx" download="Police6.docx" onclick="handleDownload('police-report-6')">Report 6</a></p>
+                <p id="police-report-7" style="display: none;">Download Police Document: <a href="data/Police7.docx" download="Police7.docx" onclick="handleDownload('police-report-7')">Report 7</a></p>
+                <p id="Bhanu-police-history" style="display: none;">Download Police Document: <a href="data/Bhanu_police.docx" download="Bhanu-police.docx" onclick="handleDownload('Bhanu-police-history')">Bhanumathi Reports</a></p>
+            </div>
+            <button class="police-records-back-button" onclick="goBackFromPoliceRecords()">Back</button>
+        </div>
+    </div>
+
+    <!-- Chatbot Container -->
+    <div id="chatbot-container" style="display: none;">
+        <h1 id="investigation-heading">Investigation Portal</h1>
+        <div id="chatbot-content-container">
+            <div id="chat-content"></div>
+            <input type="text" id="user-input" placeholder="Ask a question...">
+            <button id="submit-btn" onclick="submitQuestion(currentChatTarget)">Submit</button>
+            <button class="back-button" onclick="goBackFromChat()">Back</button>
+        </div>
+    </div>
+
+    <!-- Loading State -->
+    <div id="loading-state" style="display: none;">
+        <div class="loader"></div>
+    </div>
+</body>
+</html>

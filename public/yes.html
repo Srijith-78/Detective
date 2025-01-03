@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congratulations</title>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' http://localhost:7000; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; img-src 'self' data: http://localhost:000/icons8-favicon-48.png;">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional styles for the page */
+        #congratulations-page {
+            text-align: center;
+            padding: 20px;
+        }
+        .star {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background-color: yellow;
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+            animation: twinkle 1.5s infinite;
+        }
+        .star:nth-child(3) {
+            background-color: yellow;
+        }
+        .star:nth-child(2) {
+            background-color: yellow;
+        }
+        .star:nth-child(1) {
+            background-color: yellow;
+        }
+        @keyframes twinkle {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.5;
+            }
+        }
+        .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #a52a2a;
+            color: white;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="congratulations-page">
+        <h1>Congratulations</h1>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <br>
+        <button class="back-button" onclick="window.location.href='case-selection.html'">Back to Case Selection</button>
+    </div>
+</body>
+</html>

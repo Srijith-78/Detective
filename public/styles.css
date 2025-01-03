@@ -1,0 +1,1171 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+.title {
+    color: red;
+    font-size: 48px;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+#initial-state,
+#loading-state,
+#game-page,
+#case-selection {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#initial-state {
+    background: url('OIG.png') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+#case-selection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url('OIG.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.case-button {
+    background-color: #8B4513;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    margin: 15px 0;
+    cursor: pointer;
+}
+
+/* ... (Previous CSS styles remain unchanged) */
+
+#case-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('OIG.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+#case-image {
+    width: 200px; /* Adjust the width as needed */
+    height: 200px; /* Adjust the height as needed */
+    margin-bottom: 10px;
+}
+
+/* ... (Remaining CSS styles remain unchanged) */
+
+#case-title {
+    color: red;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+#case-text {
+    width: 500px;
+    height: 500px;
+    overflow-y: auto;
+    font-size: 16px;
+}
+
+#case-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.case-button:hover {
+    background-color: #A0522D;
+}
+
+#loading-state {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#background-image {
+    background: url('OIG.png') no-repeat center center fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#game-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#chat-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#chat-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#user-input {
+    margin-bottom: 10px;
+}
+
+#submit-btn {
+    background-color: #8B4513;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#submit-btn:hover {
+    background-color: #A0522D;
+}
+
+.brown-button {
+    background-color: #8B4513;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.brown-button:hover {
+    background-color: #A0522D;
+}
+
+.back-button {
+    background-color: #8B4513;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.back-button:hover {
+    background-color: #A0522D;
+}
+
+/* Add this to your styles.css file */
+#initial-state h1,
+#case-selection h1,
+#details-page h1 {
+    color: red;
+    font-size: 36px; /* Adjust the font size as needed */
+    font-weight: bold;
+    font-family: 'Your Chosen Font', sans-serif; /* Specify the desired font family */
+    /* Add any additional styling here */
+    text-shadow: 2px 2px 4px #800000; /* Reddish outline effect */
+}
+
+
+#settings-page,
+#about-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('OIG.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+#settings-container {
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#settings-container h1 {
+    color: #8B4513;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#music-switch-label {
+    font-size: 20px;
+    color: #8B4513;
+    margin-bottom: 10px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #8B4513;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #8B4513;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+
+
+/*Case 1.html*/
+
+#investigation-page-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url('Case1Cover.png') no-repeat center center fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+
+#investigation-page-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url('Case2Cover.png') no-repeat center center fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+#investigation-page-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url('Case3Cover.png') no-repeat center center fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+
+
+#investigation-page-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url('Case4Cover.png') no-repeat center center fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+
+#investigation-page-5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url('Case5Cover.png') no-repeat center center fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+
+#investigation-container {
+    color: red;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+#investigation-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.investigation-button {
+    background-color: #8B4513;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;    
+}
+
+.investigation-button:hover {
+    background-color: #A0522D;
+}
+
+
+/* Back Button */
+#investigation-back-button {
+    background-color: #8B4513;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;    
+}
+
+#investigation-back-button:hover {
+    background-color: #A0522D;
+}
+
+#chatbot-container {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url('Case4Cover.png') no-repeat center center fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+#chatbot-content-container {
+    background-color: rgba(255, 255, 255, 0.7); /* Adjust the alpha (last value) for transparency */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px; /* Adjust the width as needed */
+    width: 80%;
+    margin: auto;
+    overflow-y: auto; /* Add scrollbar for overflow */
+    max-height: 600px; /* Specify the maximum height for scrollbar */
+}
+
+#investigation-heading {
+    color: red; /* Adjust color as needed */
+    font-size: 36px;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+#chat-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black; /* Set text color to white */
+}
+
+#user-input {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+#submit-btn {
+    background-color: #8B4513;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#submit-btn:hover {
+    background-color: #A0522D;
+}
+
+/* Chat message styles */
+.chat-message {
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    max-width: 80%;
+}
+
+.user-message {
+    background-color: #ecf0f1; /* Light grey background for user messages */
+    align-self: flex-end;
+    text-align: left;
+}
+
+.chatbot-message {
+    background-color: #3498db; /* Blue background for chatbot messages */
+    color: #fff;
+    align-self: flex-start;
+    text-align: left;
+}
+
+/* Style for the chatbot name */
+.chatbot-name {
+    font-weight: bold;
+}
+
+
+
+.back-button {
+    background-color: #8B4513;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.back-button:hover {
+    background-color: #A0522D;
+}
+
+
+/* Add this style to your styles.css file */
+.chatbot-name {
+    font-weight: bold;
+    color: Red; /* Customize the color as needed */
+}
+
+.chat-message {
+    margin-bottom: 10px;
+}
+
+.user-message {
+    text-align: right;
+    color: black; /* Customize the color as needed */
+}
+
+.chatbot-message {
+    text-align: left;
+    color: black; /* Customize the color as needed */
+}
+
+
+/* Lab and Police Records Buttons */
+
+
+/* Lab Section */
+/* Lab Section */
+#lab-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Align text to the top */
+    background: url('Lab.png') no-repeat center center fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+#lab-container {
+    color: red; /* Set text color to red */
+    font-size: 24px; /* Adjust the font size as needed */
+    margin-top: 20px; /* Add margin at the top */
+}
+
+.lab-back-button {
+    background-color: #8B4513; /* Set back button color to brown */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.lab-back-button:hover {
+    background-color: #A0522D;
+}
+
+/* Police Records Section */
+#police-records-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Align text to the top */
+    background: url('Police.png') no-repeat center center fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+#police-records-container {
+    color: red; /* Set text color to red */
+    font-size: 24px; /* Adjust the font size as needed */
+    margin-top: 20px; /* Add margin at the top */
+}
+
+.police-records-back-button {
+    background-color: #8B4513; /* Set back button color to brown */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.police-records-back-button:hover {
+    background-color: #A0522D;
+}
+
+/* Add this style to your styles.css file */
+#investigation-page-1 h1 {
+    color: red;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+
+/* Add this style to your styles.css file */
+#investigation-page-2 h1 {
+    color: red;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+
+/* Add this style to your styles.css file */
+#investigation-page-3 h1 {
+    color: red;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+
+#investigation-page-4 h1 {
+    color: red;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+
+/* Add this style to your styles.css file */
+#investigation-page-5 h1 {
+    color: red;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+#investigation-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#investigation-buttons button {
+    background-color: #8B4513;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#resources-section {
+    margin-top: 20px;
+}
+
+#resources-section p {
+    color: red; /* Adjust color as needed */
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#resources-section button {
+    background-color: #8B4513;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#resources-section button:hover {
+    background-color: #A0522D;
+}
+
+/* Assistant icon styles */
+#assistant-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 24px;
+    background-color: #1abc9c; /* Teal color */
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1; /* Ensure it's above other elements */
+    animation: iconAnimation 0.5s ease-out; /* Icon appearance animation */
+}
+
+@keyframes iconAnimation {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Assistant popup styles */
+.assistant-popup {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 320px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: height 0.3s ease, opacity 0.3s ease;
+    height: 0;
+    opacity: 0;
+    padding: 0;
+    z-index: 2;
+}
+
+/* Display the assistant popup when opened */
+.assistant-popup.opened {
+    height: auto;
+    opacity: 1;
+}
+
+/* Assistant popup content styles */
+#assistant-content {
+    padding: 20px;
+    text-align: center;
+}
+
+#assistant-content h1 {
+    color: #e74c3c; /* Red color */
+    margin-bottom: 10px;
+}
+
+#assistant-chat {
+    max-height: 200px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    padding-right: 5px; /* Ensure smooth scrolling */
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #ddd; /* Separator line */
+    padding-top: 10px;
+}
+
+#assistant-input {
+    width: calc(100% - 40px);
+    padding: 8px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1; /* Light grey background */
+}
+
+#assistant-input:focus {
+    outline: none;
+    background-color: #e9e9e9; /* Slightly darker on focus */
+}
+
+.send-icon {
+    cursor: pointer;
+    font-size: 20px;
+    color: #1abc9c; /* Teal color */
+}
+
+.send-icon:hover {
+    color: #16a085; /* Darker teal on hover */
+}
+
+/* Assistant popup buttons styles */
+#assistant-content button {
+    display: inline-block;
+    width: 45%;
+    background-color: #3498db; /* Blue color */
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    margin: 5px 2.5%;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+#assistant-content button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+/* Style for messages in the chat */
+#assistant-chat .message {
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+#assistant-chat .message.user {
+    background-color: #ecf0f1; /* Light grey background for user messages */
+    align-self: flex-end;
+    text-align: left;
+}
+
+#assistant-chat .message.assistant {
+    background-color: #3498db; /* Blue background for assistant messages */
+    color: #fff;
+    align-self: flex-start;
+    text-align: left;
+}
+
+
+#document-submit {
+    background-color: #8B4513; /* Brown color */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;    
+    margin-top: 10px;
+}
+
+#document-submit:hover {
+    background-color: #A0522D; /* Darker brown color */
+}/* Styles for the file upload section */
+
+
+
+#kajal-msg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+#commissioner-msg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#file-upload {
+    margin-right: 10px; /* Space between the input and button */
+}
+
+#document-submit {
+    background-color: #8B4513; /* Brown color */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;    
+}
+
+#document-submit:hover {
+    background-color: #A0522D; /* Darker brown color */
+}
+
+.file-upload-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center-aligns items horizontally */
+}
+
+
+#backend-msg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#report-upload {
+    margin-right: 10px; /* Space between the input and button */
+}
+
+#report-submit {
+    background-color: #8B4513; /* Brown color */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;    
+}
+
+#report-submit:hover {
+    background-color: #A0522D; /* Darker brown color */
+}
+
+.report-upload-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center-aligns items horizontally */
+}
+
+
+
+
+
+/* Congratulations */
+#Congratulation-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url('Case1Cover.png') no-repeat center center fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+#Congratulation-container {
+    color: red;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+#Congratulation-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.Congratulation-button {
+    background-color: #8B4513;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;    
+}
+
+.Congratulation-button:hover {
+    background-color: #A0522D;
+}
+
+/* Back Button */
+#Congratulation-back-button {
+    background-color: #8B4513;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;    
+}
+
+#Congratulation-back-button:hover {
+    background-color: #A0522D;
+}
+
+/* Try Again */
+#Try-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url('Case1Cover.png') no-repeat center center fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+#Try-container {
+    color: red;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+#Try-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.Try-button {
+    background-color: #8B4513;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;    
+}
+
+.Try-button:hover {
+    background-color: #A0522D;
+}
+
+/* Back Button */
+#Try-back-button {
+    background-color: #8B4513;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;    
+}
+
+#Try-back-button:hover {
+    background-color: #A0522D;
+}
+
+/* Star styles */
+.star {
+    display: inline-block;
+    width: 250px; /* Increased size */
+    height: 250px; /* Increased size */
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    animation: twinkle 1.5s infinite;
+}
+
+.star.yellow {
+    background-color: yellow;
+}
+
+.star.black {
+    background-color: black;
+}
+
+@keyframes twinkle {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}

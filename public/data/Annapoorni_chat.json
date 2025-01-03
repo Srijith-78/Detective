@@ -1,0 +1,19 @@
+[
+    {"label": "greeting", "text": "Hello", "response": "Hello, Detective Arjun. My name is Dinesh. I live in Madipakkam. My mother, Priya is missing for the past four days."},
+    {"label": "greeting", "text": "hello", "response": "Hello, Detective Arjun. My name is Dinesh. I live in Madipakkam. My mother, Priya is missing for the past four days."},
+    {"label": "greeting", "text": "Hi", "response": "Hello, Detective Arjun. My name is Dinesh. I live in Madipakkam. My mother, Priya is missing for the past four days."},
+    {"label": "greeting", "text": "hi", "response": "Hello, Detective Arjun. My name is Dinesh. I live in Madipakkam. My mother, Priya is missing for the past four days."},
+    {"label": "farewell", "text": "Goodbye", "response": "Goodbye! Have a great day."},
+    {"label": "farewell", "text": "Bye", "response": "See you later! Take care."},
+    {"label": "question", "text": "How are you?", "response": "I'm sad. I miss my mother. She has been missing for the past four days. Her name is Priya, and we live in Madipakkam."},
+    {"label": "name", "text": "What's your name?", "response": "My name is Dinesh."},
+    {"label": "Time", "text": "When did you see your mother for the last time?", "response": "On Wednesday. Around 5:45-6. She went saying that she's going to buy groceries. But she never returned."},
+    {"label": "shop", "text": "Which shop does your mother go for buying groceries?", "response": "Venketeshwara super market, Madipakkam, which is one kilometer away."},
+    {"label": "shop", "text": "Where does your mother usually go for shopping?", "response": "Venketeshwara super market, Madipakkam, which is one kilometer away."},
+    {"label": "father", "text": "Where is your father?", "response": "We haven't met our father for three months. He doesn't come to the house."},
+    {"label": "unwanted", "text": "Anything else", "response": "I'm sorry, I don't have anything to tell about that."},
+    {"label": "unwanted", "text": "Does your father have an affair?", "response": "I'm sorry, I don't have anything to tell about that."},
+    {"label": "unwanted", "text": "You are an Idiot", "response": "I'm sorry, I don't have anything to tell about that."}
+  ]
+  
+  

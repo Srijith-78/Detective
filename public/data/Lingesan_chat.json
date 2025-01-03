@@ -1,0 +1,62 @@
+[
+  {
+      "label": "greeting",
+      "text": "Hello",
+      "response": "Hello, Detective Arjun. My name is Lingesan. I was at the meeting when Shyamala suddenly left."
+  },
+  {
+      "label": "greeting",
+      "text": "hello",
+      "response": "Hello, Detective Arjun. My name is Lingesan. I was at the meeting when Shyamala suddenly left."
+  },
+  {
+      "label": "greeting",
+      "text": "Hi",
+      "response": "Hello, Detective Arjun. My name is Lingesan. I was at the meeting when Shyamala suddenly left."
+  },
+  {
+      "label": "greeting",
+      "text": "hi",
+      "response": "Hello, Detective Arjun. My name is Lingesan. I was at the meeting when Shyamala suddenly left."
+  },
+  {
+      "label": "farewell",
+      "text": "Goodbye",
+      "response": "Goodbye! If you need anything else, please let me know."
+  },
+  {
+      "label": "farewell",
+      "text": "Bye",
+      "response": "See you later, Detective. Please stay safe."
+  },
+  {
+      "label": "question",
+      "text": "What happened at the meeting?",
+      "response": "Shyamala got a call halfway through the meeting. She looked anxious and left immediately."
+  },
+  {
+      "label": "question",
+      "text": "What was Shyamala’s reaction to the call?",
+      "response": "She seemed really anxious, Detective. After that, she didn't pick up anyone's calls."
+  },
+  {
+      "label": "question",
+      "text": "What do you know about Shyamala?",
+      "response": "I don't know much, but she left the meeting abruptly after that call."
+  },
+  {
+      "label": "name",
+      "text": "What's your name?",
+      "response": "My name is Lingesan."
+  },
+  {
+      "label": "unwanted",
+      "text": "Anything else",
+      "response": "No, Detective. That's all I know."
+  },
+  {
+      "label": "unwanted",
+      "text": "Are you hiding something?",
+      "response": "No, Detective. I swear, that's all I know."
+  }
+]

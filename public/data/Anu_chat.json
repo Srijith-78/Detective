@@ -1,0 +1,77 @@
+[
+    {
+        "label": "greeting",
+        "text": "hello",
+        "response": "Hi there! How can I help you?"
+    },
+    {
+        "label": "greeting",
+        "text": "hi",
+        "response": "Hi there! How can I help you?"
+    },
+    {
+        "label": "farewell",
+        "text": "bye",
+        "response": "See you later! Take care."
+    },
+    {
+        "label": "farewell",
+        "text": "goodbye",
+        "response": "Goodbye! Have a great day."
+    },
+    {
+        "label": "support",
+        "text": "how are you?",
+        "response": "Not really well, this case has given me sleepless nights."
+    },
+    {
+        "label": "support",
+        "text": "how you doin', mate?",
+        "response": "Not really well, this case has given me sleepless nights."
+    },
+    {
+        "label": "identity",
+        "text": "what's your name?",
+        "response": "I'm Aravind, Assistant Commissioner of Police, Chennai!"
+    },
+    {
+        "label": "identity",
+        "text": "who are you?",
+        "response": "I'm Aravind, Assistant Commissioner of Police, Chennai!"
+    },
+    {
+        "label": "case_info",
+        "text": "tell us about the case",
+        "response": "The case involves several murders: a body mixed with beef biriyani at a hotel, a CEO's body in a water tank with palms stuck in a notice board, and a head found inside a wooden box hung at a traffic signal. Feel free to question me or review the Autopsy and police reports."
+    },
+    {
+        "label": "case_info",
+        "text": "what is the case about?",
+        "response": "The case involves a series of murders: a body mixed with beef biriyani, a CEO's body in a water tank with palms on a notice board, and a head found in a wooden box at a traffic signal. You can question me or check the Autopsy and police reports for more details."
+    },
+    {
+        "label": "unwanted",
+        "text": "anything else",
+        "response": "I'm sorry, I don't have anything to tell about that."
+    },
+    {
+        "label": "unwanted",
+        "text": "how's the misses?",
+        "response": "I'm sorry, I don't have anything to tell about that."
+    },
+    {
+        "label": "unwanted",
+        "text": "you are an idiot",
+        "response": "I'm sorry, I don't have anything to tell about that."
+    },
+    {
+        "label": "update",
+        "text": "what's the update?",
+        "response": "We visited Priya's area. The supermarket is about 4 streets away, and CCTV shows she did not reach there. We found a manhole and a tree with string cuts blocking the road. We faced opposition from local party members when trying to access the sump, so we left. It is MLA Shyamala's area."
+    },
+    {
+        "label": "update",
+        "text": "do you have any updates?",
+        "response": "We visited Priya's area and found that she did not reach the supermarket as per the CCTV footage. We discovered a manhole and a tree with string cuts blocking the road. We encountered resistance from local party members when trying to open the sump, so we had to leave. It is MLA Shyamala's area."
+    }
+]
